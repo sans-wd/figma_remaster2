@@ -57,6 +57,9 @@
     width: 100%;
 
 }
+.features_img_mob{
+    display: none;
+}
 .features_cta{
     margin-top: 60px;
     width: 50%;
@@ -137,7 +140,7 @@
         width: 100%;
         max-width: 327px;
         min-height: 24px;
-        padding: 24px 24px 24px 24px;
+        padding: 24px;
     }
     
     .logo{
@@ -147,15 +150,23 @@
     .logo img{
         width: 80px;
         height: 24px;
+    
     }
     .menu{
         width: 80%;
+        min-height: inherit;
         float: left;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        box-sizing: border-box;
     }
     .menu ul{
-        margin-left: 80px;
+        margin: 0;
+        padding: 0;
     }
     .menu ul li {
+        list-style-type: none;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
@@ -163,8 +174,7 @@
         line-height: 14px;
         color: #07043B;
         float: left;
-        margin-right: 20px;
-        list-style-type: none;
+        margin-right: 24px;
         
     
     }
@@ -172,15 +182,28 @@
         text-decoration: none;
     }
     
+    
+    
+    .features_img_mob{
+        display: block;
+        float: left;
+
+    }
+
+
+    .features_img{
+        display: none;
+    }
     .features_content{
         float: left;
-        padding: 90px 24px;
+        padding: 10px 35px;
         width: 100%;
         box-sizing: border-box;
     
     }
+
     .features_cta{
-        margin-top: 255px;
+        margin-top: 40px;
         width: 100%;
         float: left;
     }
@@ -202,20 +225,24 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 21px;
-        text-align: center;         
+        text-align: center;   
         color: #07043B;
     }
     
     .features_cta .inp{
+        width: 304px;
+        height: 40px;
         border: 0.625px solid #07043b;
         border-radius: 3.125px;
-        padding: 12px 135px 12px 21px;
+        padding: 14px 181px 12px 21px;
+        box-sizing: border-box;
         outline: none;
-      
         margin-top: 25px;
     
     }
     .features_cta .btn{
+        width: 304px;
+        height: 40px;
         background: #2F65F8;
         box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
         border-radius: 3.125px;
@@ -226,26 +253,12 @@
         line-height: 16px;
         color: #FFFFFF;
         border-color: transparent;
-        padding: 12px 118px 12px 113px;
-        margin-left: 10px;
-        width: 304px;
+        padding: 12px 113px;
+        margin: 0 auto;
         margin-top: 16px;
-      
     }
-    
-    .features_img{
-        position: absolute;
-        float: left;
-        width: 50%;
-        top: 130px;
-        left: 45px;
 
-    }
-    
-    .features_img img{
-        width: 304px;
-        height:225px ;
-    }
+
 
 
  }
